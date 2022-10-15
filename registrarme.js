@@ -7,31 +7,9 @@ const provinciaElement = document.getElementById(`provincia`);
 const codigoPostalElement = document.getElementById(`codigoPostal`);
 const localidadElement = document.getElementById(`localidad`);
 const calleElement = document.getElementById(`calle`);
-// Login
-const formLogin = document.getElementById(`login`);
-const correoLoginElement = document.getElementById(`correoLogin`)
-const contrasenaLoginElement = document.getElementById(`contrasenaLogin`)
 
-//Olvidé mi contraseña
-function validarCorreoOlvideMiContrasena() {
-    const htmlinputcontrasena = document.getElementById("emailOlvideContrasena");
-    const expReg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    const envioContrasena = expReg.test(htmlinputcontrasena.value);
-    if (envioContrasena == true) {
-        Swal.fire({
-            icon: 'success',
-            title: 'Listo',
-            text: 'Se le envió una contraseña provisoria a su mail',
-        });
-    }
-    else {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'El correo electrónico no es válido',
-        });
-    }
-}
+
+
 
 //Contraseña validación
 function validarContrasenia(contrasenia) {
@@ -101,22 +79,6 @@ formRegistro.onsubmit = (event) => {
 
     formRegistro.reset();
 }
-// Login
-/* formLogin.onsubmit = (event) => {
-    event.preventDefault();
-    const correoLoginElement = correoLoginElement.value;
-    const contrasenaLoginElement = contrasenaLoginElement.value;
-} */
-/* const clienteRegistrado = guardar.find((u) => guardar.email === correo && guardar.contrasenia === contrasena);
-if (!clienteRegistrado) {
-   return Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Tu contraseña y/o correo electrónico no son válidos',
-      })
-} else {
-    setTimeout(() => {
-        window.location.href = '/.index.html';
-    }, 1000)
-} */
+
+
 
