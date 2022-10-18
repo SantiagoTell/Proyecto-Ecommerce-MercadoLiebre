@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&family=Reenie+Beanie&display=swap');
+
+.logo{
+    border-radius: 52% !important;
+}
+
+h6{
+    color: #d8d8d8;
+}
+
+#home {
+    background-image: url("https://misanimales.com/wp-content/uploads/2018/06/ir-de-compras-con-perro.jpg");
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: top center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.galeria{
+    cursor: pointer;
+    transition:0.3s all;
+}
+.galeria:hover{
+    opacity:0.7;
+
+}
+.shopNow{
+    transform: translateY(20px);
+    opacity:0;
+    transition:0.3s all;
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    background-color: #1d1d1d;
+    color:aliceblue;
+    padding: 13px 30px;
+}
+
+.shopNow:hover{
+    transform: translateY(0);
+    opacity:1;
+}
+.star{
+    padding: 10px 0;
+}
+.star i{
+    font-size: 0.8rem;
+    color:goldenrod;
+}
+p{
+    text-align: justify;
+    width: 75%;
+}
+#banner{
+    background-image: url("https://www.acws.cl/wp-content/uploads/2020/04/veterinario-900x450.jpg");
+    width:100%;
+    height:60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 15%;
+}
+h2{
+    font-family: 'Cormorant Garamond', serif;
+
+}
+/*#productosDestacados .one  img{
+    width:100%;
+    height:100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+
+/* #productosDestacados .one .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left:0%;
+    transition: 0.3s ease;
+}*/
+
+/* #productosDestacados .one:hover .details{
+    cursor:pointer !important;
+    pointer-events: auto;
+    background-color: rgba(245, 178, 178, 0.7) !important;
+}
+
+/*.container{
+    margin: 0%;
+    padding: 0%;
+}
+.product-inner-box .icons{
+    right:15px;
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+    top:-3%;
+    transition: all 0.2s ease-in-out, transform 2.0s ease-in-out, opacity 0.2s ease-in-out;
+    opacity:0;
+}
+.product-inner-box .icons a{
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.product-inner-box .onsale .badged{
+    background: #000;
+    padding: 5px 15px;
+    font-size: 12px;
+    top:0px;
+    position: absolute;
+}
+.product-inner-box .onsale .badge :before{
+    border-width: 18px 0px 0px 12px;
+    border-color: transparent transparent transparent #000;
+    content: "";
+    position: absolute;
+    right: -0px;
+    width: 0;
+    bottom: 0;
+    border-style: solid;
+}
+.product-inner-box .onsale .badge :after{
+    border-width: 18px 8px 0px 10px;
+    border-color: #000 transparent transparent;
+    content: "";
+    position: absolute;
+    right: -0px;
+    width: 0px;
+    top: 0;
+    border-style: solid;
+}
+.product-inner-box img{
+    box-shadow: 0 33px 61px -29px rgb(0 0 0 / 26%);
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-box.is-hover .icons{
+    transform:rotateY(-5%);
+    top: 3%;
+    opacity:1;
+}
+.cart-btn{
+    position: absolute;
+    bottom:20px;
+    text-align:center;
+    width:100%;
+    opacity:0;
+    transition: all 0.2s ease-in-out, transform 2.0s ease-in-out, opacity 0.2s ease-in-out !important;
+}
+.product-box.is-hover .cart-btn{
+    opacity:1;
+}*/
