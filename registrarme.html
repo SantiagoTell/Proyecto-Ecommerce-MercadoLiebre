@@ -21,6 +21,7 @@
                 <form id="formRegistro" method="post">
                     <input class="text" type="text" name="Username" id="usuario" placeholder="Apelido y nombre" required="">
                     <input class="text email" type="email" name="email" id="email" placeholder="Email" required="">
+                    <p id="emailYaRegistrado" class="d-none text-danger">Ya existe un usuario registrado con este E-mail.</p>
                     <input class="text" type="password" name="password" id="contrasenia" placeholder="Contraseña" required="">
                     <select class="form-select m-1" aria-label="Default select example" id="provincia">
                         <option selected value="buenos aires">Buenos Aires</option>
@@ -39,7 +40,7 @@
                         </label>
                         <div class="clear"> </div>
                     </div>
-                    <input type="submit" id="" value="Registrarme">
+                     <input type="submit" id="" value="Registrarme">
                 </form>
                 <p>¿Ya estás registrado? <a href="./login.html"> Inicia sección</a></p>
             </div>

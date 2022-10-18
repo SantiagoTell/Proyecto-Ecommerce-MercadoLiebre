@@ -7,6 +7,7 @@ const provinciaElement = document.getElementById(`provincia`);
 const codigoPostalElement = document.getElementById(`codigoPostal`);
 const localidadElement = document.getElementById(`localidad`);
 const calleElement = document.getElementById(`calle`);
+const emailYaRegistradoElement = document.getElementById(`emailYaRegistrado`);
 
 
 
@@ -51,10 +52,18 @@ formRegistro.onsubmit = (event) => {
     const codigoPostal = codigoPostalElement.value;
     const localidad = localidadElement.value;
     const calle = calleElement.value;
-     validarCorreo(email); //verdadero si el correo esta bien, falso si no
+    validarCorreo(email); //verdadero si el correo esta bien, falso si no
     validarContrasenia(contrasenia);//verdadero si el correo esta bien, falso si no
 
+// Logueado
+const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
+
+//html
+
+
+
     guardar.push({
+        rol: `client`,
         usuario,
         email,
         contrasenia,
@@ -63,10 +72,10 @@ formRegistro.onsubmit = (event) => {
         localidad,
         calle,
         id: Date.now(),
-        suspendido: false,
-        rol: `client`,
+        suspendido: false,    
     })
     localStorage.setItem(`guardar`, JSON.stringify(guardar));
+    localStorage.setItem(`usuarioLogueado`, JSON.stringify(guardar))
 
     if(validarCorreo(email) && validarContrasenia(contrasenia))
     {
@@ -75,10 +84,16 @@ formRegistro.onsubmit = (event) => {
             title: 'Registro completado.',
             text: 'Bienvenido a Mercado Liebre.',
         });
+        //redirección
+        setTimeout(() => {
+            window.location.href = './index.html';
+        }, 1000)
     }
+    
 
     formRegistro.reset();
 }
+
 
 
 

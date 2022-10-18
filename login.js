@@ -35,7 +35,14 @@ formLogin.onsubmit = (event) => {
             title: 'Oops...',
             text: 'Tu contraseña y/o correo electrónico no son válidos',
           })
-    } else {
+    } else if(clienteRegistrado.role === admin) {
+        localStorage.setItem('administrador', JSON.stringify(clienteRegistrado));
+        setTimeout(() => {
+            window.location.href = './admin.html';
+        }, 1000)
+    } 
+    
+    else {
         setTimeout(() => {
             window.location.href = './index.html';
         }, 1000)
