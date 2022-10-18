@@ -28,6 +28,7 @@ formLogin.onsubmit = (event) => {
     let guardar = JSON.parse(localStorage.getItem("guardar")) || []
     let correo = correoLoginElement.value;
     let contrasena = contrasenaLoginElement.value;
+    let admin = `admin`;
     let clienteRegistrado = guardar.find((u) => u.email === correo && u.contrasenia === contrasena);
     if (!clienteRegistrado) {
          Swal.fire({
