@@ -1,0 +1,52 @@
+body {
+    margin: 0px;
+    background-color: rgb(124, 163, 235) !important;
+}
+
+.perro-albañil {
+    width: fit-content;
+    height: 500px;
+}
+.dialogo {
+    background-color: whitesmoke !important;
+    width: 300px;
+    position: absolute;
+    right: 400px;
+    border-radius: 20px;
+    border: solid 3px
+}
+#perro-frase {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 490;
+    font-size: 1.1rem;
+
+}
+
+.boton-volver {
+position: absolute;
+bottom: 100px;
+}
+
+@media (max-width: 767px) {
+    .dialogo {
+        position: absolute;
+        left: 10%;
+    }
+    .perro-albañil {
+        position: relative;
+        top: 150px;
+        left: 10%;
+    }
+    .boton-volver {
+        position: relative;
+        top: 150px;
+    }
+}
+@media (max-width: 424px) {
+    .perro-albañil {
+        position: relative;
+        left: 100px;
+    }
+}
