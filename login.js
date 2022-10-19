@@ -43,7 +43,7 @@ formLogin.onsubmit = (event) => {
             window.location.href = './store-products.html';
         }, 1000)
     }  else {
-        localStorage.setItem(`usuarioLogueado`, JSON.stringify(guardar))
+        localStorage.setItem(`user`, JSON.stringify(clienteRegistrado))
         setTimeout(() => {
             window.location.href = './index.html';
         }, 1000)
