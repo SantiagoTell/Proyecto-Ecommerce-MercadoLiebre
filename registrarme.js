@@ -9,9 +9,6 @@ const localidadElement = document.getElementById(`localidad`);
 const calleElement = document.getElementById(`calle`);
 const emailYaRegistradoElement = document.getElementById(`emailYaRegistrado`);
 
-
-
-
 //Contraseña validación
 function validarContrasenia(contrasenia) {
     const expReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
@@ -93,7 +90,7 @@ const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
 
     formRegistro.reset();
 }
-
+export {guardar,formRegistro};
 
 
 

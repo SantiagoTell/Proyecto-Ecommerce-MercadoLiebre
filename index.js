@@ -1,7 +1,11 @@
-//var cards = document.querySelectorAll('.product-box')
+import {guardar,formRegistro} from "./registrarme.js";
+localStorage.setItem(`guardar`, JSON.stringify(guardar));
+localStorage.setItem(`usuarioLogueado`, JSON.stringify(guardar))
 
-//[cards].forEach( (card)=>(card.addEventListener('mouseover', function(){
-        //card.classList.add('is-hover');}),
-        //card.addEventListener('mouseleave', function(){
-        //card.classList.remove('is-hover');})
-        //))
+const mostrarLogueo = document.querySelector(`#mostrarLogueo`)
+if (!usuarioLogueado) {
+    mostrarLogueo.innerHTML = `
+    /* <button class="btn btn-outline-light m-1" type="submit"> Entrar</button>
+<button class="btn btn-outline-light" type="submit"> Registrarme</button> */
+`; 
+}
