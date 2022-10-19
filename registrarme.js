@@ -9,9 +9,6 @@ const localidadElement = document.getElementById(`localidad`);
 const calleElement = document.getElementById(`calle`);
 const emailYaRegistradoElement = document.getElementById(`emailYaRegistrado`);
 
-
-
-
 //Contraseña validación
 function validarContrasenia(contrasenia) {
     const expReg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])[A-Za-z\d$@$!%*?&#.$($)$-$_]{8,15}$/;
@@ -55,8 +52,6 @@ formRegistro.onsubmit = (event) => {
     validarCorreo(email); //verdadero si el correo esta bien, falso si no
     validarContrasenia(contrasenia);//verdadero si el correo esta bien, falso si no
 
-// Logueado
-const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
 
 //html
 
@@ -74,8 +69,20 @@ const usuarioLogueado = JSON.parse(localStorage.getItem('usuarioLogueado'));
         id: Date.now(),
         suspendido: false,    
     })
+   /*  const datosAGuardar = {
+        rol: `client`,
+        usuario,
+        email,
+        contrasenia,
+        provincia,
+        codigoPostal,
+        localidad,
+        calle,
+        id: Date.now(),
+        suspendido: false,    
+    }
+    localStorage.setItem('usuarioRegistrados',JSON.stringify(datosAGuardar)); */
     localStorage.setItem(`guardar`, JSON.stringify(guardar));
-    localStorage.setItem(`usuarioLogueado`, JSON.stringify(guardar))
 
     if(validarCorreo(email) && validarContrasenia(contrasenia))
     {

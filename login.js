@@ -2,6 +2,7 @@
 const formLogin = document.getElementById(`login`);
 const correoLoginElement = document.getElementById(`correoLogin`)
 const contrasenaLoginElement = document.getElementById(`contrasenaLogin`)
+
 //Olvidé mi contraseña
 function validarCorreoOlvideMiContrasena() {
     const htmlinputcontrasena = document.getElementById("emailOlvideContrasena");
@@ -39,11 +40,10 @@ formLogin.onsubmit = (event) => {
     } else if(clienteRegistrado.role === admin) {
         localStorage.setItem('administrador', JSON.stringify(clienteRegistrado));
         setTimeout(() => {
-            window.location.href = './admin.html';
+            window.location.href = './store-products.html';
         }, 1000)
-    } 
-    
-    else {
+    }  else {
+        localStorage.setItem(`user`, JSON.stringify(clienteRegistrado))
         setTimeout(() => {
             window.location.href = './index.html';
         }, 1000)
