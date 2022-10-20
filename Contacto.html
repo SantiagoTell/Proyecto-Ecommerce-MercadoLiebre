@@ -7,48 +7,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/35223ba9d9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Contacto.css">
+    <link rel="stylesheet" href="index.css">
     <title>Mercado Liebre</title>
+    <link rel="shortcut icon" href=".//img/PHOTO-2022-10-20-16-53-56.jpg" type="image/png" sizes="64">
 </head>
 
-<body class="d-flex justify-content-center align-items-center">
-    <div class="contacto">
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Index.html">
+                <img src=".//img/PHOTO-2022-10-20-16-53-56.jpg"
+                    alt="logo" class="logo img-thumbnail" width="75px" height="70px">
+            </a>
+            <a class="navbar-brand" href="#">Mercado Liebre</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./store-products.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./AboutUs.html">Nuestros Profesionales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                <form class="d-flex my-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar producto" aria-label="Buscar">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div id="mostrarLogueo" class="m-auto d-flex">
+
+                </div>
+            </div>
+
+            <!-- <i class="fa-thin fa-paw-simple"></i> -->
+        </div>
+    </nav>
+<!-- Navbar -->
+
+<div class="d-flex justify-content-center align-items-center recuadro">
+
+    <div class="contacto needs-validation">
         <p class="text-center fs-2">¡Contactanos!</p>
 
 
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Tu nombre y apellido" aria-label="Recipient's username"
+            <input type="text" class="form-control" required placeholder="Tu nombre y apellido" aria-label="Recipient's username"
                 aria-describedby="basic-addon2">
         </div>
 
         <label for="basic-url" class="form-label">tu numero de teléfono:</label>
         <div class="input-group mb-3">
             <span class="input-group-text" id="basic-addon3">+54</span>
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            <input type="text" class="form-control" required id="basic-url" aria-describedby="basic-addon3">
         </div>
 
         <div class="input-group mb-3">
             <span class="input-group-text ubicacion" id="basic-addon3">ubicación</span>
-            <input type="text" class="form-control ubicacion" placeholder="ej: San Miguel, Tucumán  "
+            <input type="text" class="form-control ubicacion" required placeholder="ej: San Miguel, Tucumán  "
                 aria-label="Amount (to the nearest dollar)">
         </div>
 
         <div class="input-group mb-3">
             <input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Username">
-            <span class="input-group-text">@</span>
+            <span class="input-group-text" required>@</span>
             <input type="text" class="form-control" placeholder="mail.com" aria-label="Server">
         </div>
 
         <div class="input-group">
-            <span class="input-group-text">Deja aqui tu<br> comentario</span>
+            <span class="input-group-text" required>Deja aqui tu<br> comentario</span>
             <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
         <div class="d-flex justify-content-center">
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="submit" class="btn btn-primary my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Enviar
             </button>
-            
             
         </div>
     </div>
@@ -71,9 +119,148 @@
             </div>
         </div>
 
+</div>
+<!-- Footer -->
+    <footer class="bg-dark text-center text-white ">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
 
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
 
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
 
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">web</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Ingresar</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Registrarme</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Acerca de nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Página de contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Conócenos</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Área de clientes</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Condiciones de ventas</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Responsabilidad social</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Código ético</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <h5 class="text-uppercase">Ayuda</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="#!" class="text-white">Comprar</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Resolución de problemas</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Centro de seguridad</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Defensa del consumidor</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <ul class="list-unstyled mb-0">
+                            <h6>Medios de pago</h6>
+                            <li>
+                                <img src="https://enclave.rae.es/sites/default/files/visa_mastercard.png" alt="tarjetas"
+                                    width="96">
+                            </li>
+                            <li>
+                                <img src="https://pintureriaszumik.com.ar/wp-content/uploads/2020/01/tarjeta-naranja-633x400.png"
+                                    alt="tarjeta" width="46">
+                                <img src="https://www.hsbc.com.ar/content/dam/hsbc/hbar/images/tarjeta-debito/tarjeta-debito-masiva-540x340.png"
+                                    alt="tarjeta" width="45">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright: todos los derechos reservados
+        </div>
+        <!-- Copyright -->
+    </footer>
+<!-- Footer -->
+
+        <script>
+            var nav = document.querySelector('nav');
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 10) {
+                    nav.classList.add('bg-dark', 'shadow');
+                } else {
+                    nav.classList.remove('bg-dark', 'shadow');
+                }
+            })
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
