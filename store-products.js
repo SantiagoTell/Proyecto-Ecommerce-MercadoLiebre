@@ -75,6 +75,7 @@ let cart = [];
 // buttons
 let buttonsDOM = [];
 
+let loginUser = JSON.parse(localStorage.getItem('user'));
 let loginAdmin = JSON.parse(localStorage.getItem('isAdmin'));
 
 // getting the products
@@ -189,10 +190,10 @@ class UI {
       if (!product.hasOwnProperty('product_delete')) {
         result += `
         <!-- single product -->
-        <article class="product">
+        <article class="product p-2">
           <div class="img-container">
             <img src=${product.product_image} alt="product" class="product-img"/>
-            <button ${loginAdmin ? "class='bag-btn d-none'" : "class='bag-btn'"} data-id=${product.product_id}>
+            <button ${loginUser ? "class='bag-btn'" : "class='bag-btn d-none'"} data-id=${product.product_id}>
               ${product.product_stock === 0 ? "SIN STOCK" : "<i class='fas fa-shopping-cart'></i>Agregar al carro"}
             </button>
             <div ${loginAdmin ? "class='btnMenuProduct'" : "class='btnMenuProduct d-none'"}>
@@ -206,15 +207,14 @@ class UI {
               ${(product.product_status || !product.hasOwnProperty('product_status')) ? "<i class='fas fa-fire'></i>Publicado" : "<i class='fas fa-fire'></i>No Publicado"}
               </button>
             </div>
-          </div>
-          <h2>${product.product_name}</h2>
-          <p>${product.product_description}</p>
-          <h5>${product.product_stock}</h5>
-          <h4>$${product.product_price}</h4>
-          <h5>${product.product_delete}</h5>
-          <h5>${product.product_status}</h5>
-          <button type="button" ${loginAdmin ? "class='btnProductInfo btn btn-info m-2 d-none'" : "class='btnProductInfo btn btn-info m-2'"}data-id=${product.product_id}>
-          <i class="fas fa-info me-2"></i>Más Info</button>
+            </div>
+            <div class="m-auto p-2 text-center">
+            <h3>${product.product_name}</h3>
+            <h4>$${product.product_price}</h4>
+            <h5>Stock: ${product.product_stock}</h5>
+            <button type="button" ${loginAdmin ? "class='btnProductInfo btn btnInfo m-2 d-none'" : "class='btnProductInfo btn btnInfo m-2'"}data-id=${product.product_id}>
+            <i class="fas fa-info me-2"></i>Más Info</button>
+            </div>
         </article>
         <!-- end of single product -->
         `;
@@ -249,13 +249,6 @@ class UI {
                   <div class="card-body">
                     <h4 class="card-title">${user.usuario}</h4>
                     <p class="card-text">${user.email}</p>
-                    <p class="card-text">${user.contrasenia}</p>
-                    <p class="card-text">${user.provincia}</p>
-                    <p class="card-text">${user.codigoPostal}</p>
-                    <p class="card-text">${user.localidad}</p>
-                    <p class="card-text">${user.calle}</p>
-                    <p class="card-text">${user.id}</p>
-                    <p class="card-text">${user.suspendido}</p>
                     <p class="card-text">${user.rol}</p>
                   </div>
                 </div>
@@ -685,12 +678,12 @@ class UI {
         usersSection.classList.add('d-none');
         productInfo.classList.remove('d-none');
         result = `
-        <div class="card mb-3 w-75 m-auto">
+        <div class="card mb-3 m-auto animate__animated animate__backInDown">
           <img src="${itemTemp.product_image}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${itemTemp.product_name}</h5>
-            <p class="card-text">${itemTemp.product_description}</p>
-            <p class="card-text"><small class="text-muted">$${itemTemp.product_price}</small></p>
+          <div class="card-body m-auto text-center">
+            <h3 class="card-title">${itemTemp.product_name}</h3>
+            <p class="card-text text-center m-auto">${itemTemp.product_description}</p>
+            <h4 class="card-text fw-bolder mt-3">$${itemTemp.product_price}</h4>
           </div>
         </div>
         `;
@@ -918,9 +911,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if(loginAdmin) {
     btnPanelControl.classList.remove("d-none");
     cartBtn.classList.add("d-none");
-  } else {
+  } else if(loginUser){
     btnPanelControl.classList.add("d-none");
     cartBtn.classList.remove("d-none");
+  } else {
+    btnPanelControl.classList.add("d-none");
+    cartBtn.classList.add("d-none");
   }
 
 });

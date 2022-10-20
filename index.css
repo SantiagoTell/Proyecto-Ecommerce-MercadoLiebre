@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&family=Reenie+Beanie&display=swap');
 
+.bgNavbar {
+    background-color: #000000cc;
+    transition: all 0.5s ease;
+}
+
 .logo{
     border-radius: 52% !important;
 }
