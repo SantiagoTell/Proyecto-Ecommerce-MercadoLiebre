@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&family=Reenie+Beanie&display=swap');
+
+.bgNavbar {
+    background-color: #000000cc;
+    transition: all 0.5s ease;
+}
+
+.logo{
+    border-radius: 52% !important;
+}
+
+h6{
+    color: #d8d8d8;
+}
+
+#home {
+    background-image: url("https://misanimales.com/wp-content/uploads/2018/06/ir-de-compras-con-perro.jpg");
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-position: top center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.galeria{
+    cursor: pointer;
+    transition:0.3s all;
+}
+.galeria:hover{
+    opacity:0.7;
+
+}
+.shopNow{
+    transform: translateY(20px);
+    opacity:0;
+    transition:0.3s all;
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border:none;
+    background-color: #1d1d1d;
+    color:aliceblue;
+    padding: 13px 30px;
+}
+
+.shopNow:hover{
+    transform: translateY(0);
+    opacity:1;
+}
+.star{
+    padding: 10px 0;
+}
+.star i{
+    font-size: 0.8rem;
+    color:goldenrod;
+}
+p{
+    text-align: justify;
+    width: 75%;
+}
+#banner{
+    background-image: url("https://www.acws.cl/wp-content/uploads/2020/04/veterinario-900x450.jpg");
+    width:100%;
+    height:60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.details{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 15%;
+}
+h2{
+    font-family: 'Cormorant Garamond', serif;
+
+}
+

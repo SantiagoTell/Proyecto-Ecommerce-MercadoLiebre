@@ -1,0 +1,222 @@
+{
+  "items": [
+    {
+      "product_id": 1,
+      "product_name": "DOYPACK DENTAL PLUS",
+      "product_price": 980,
+      "product_stock": 3,
+      "product_description": "Semillas de hinojo, semillas de eneldo, semillas de lino, apio en polvo, aceite de eucalipto y de perejil, proteína concentrada de soja, perejil en polvo, nuéz mosacada en polvo, glicerina vegetal, harina de arróz, fécula de papa, harina de soja, aceite vegetal mezcla, gluten de trigo, clorofila, glicerina, gelatina, caseinato de sodio, hidrolizado proteico.",
+      "product_image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/756/058/products/products-dentalplus-doypack-0131-072902fa9effbab2eb15828284997424-480-0.jpg",
+      "product_status": true
+    },
+    {
+      "product_id": 2,
+      "product_name": "BLISTERS DENTAL PLUS",
+      "product_price": 570,
+      "product_stock": 2,
+      "product_description": "Semillas de hinojo, semillas de eneldo, semillas de lino, apio en polvo, aceite de eucalipto y de perejil, proteína concentrada de soja, perejil en polvo, nuéz mosacada en polvo, glicerina vegetal, harina de arróz, fécula de papa, harina de soja, aceite vegetal mezcla, gluten de trigo, clorofila, glicerina, gelatina, caseinato de sodio, hidrolizado proteico.",
+      "product_image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/756/058/products/dental-plus-7-unidades-upload1-0914619881a51077be15928685534706-640-0.png",
+      "product_status": true
+    },
+    {
+      "product_id": 3,
+      "product_name": "CHEAPBONE DENTAL PLUS",
+      "product_price": 7280,
+      "product_stock": 13,
+      "product_description": "Semillas de hinojo, semillas de eneldo, semillas de lino, apio en polvo, aceite de eucalipto y de perejil, proteína concentrada de soja, perejil en polvo, nuéz mosacada en polvo, glicerina vegetal, harina de arróz, fécula de papa, harina de soja, aceite vegetal mezcla, gluten de trigo, clorofila, glicerina, gelatina, caseinato de sodio, hidrolizado proteico.",
+      "product_image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/756/058/products/02-2k1-fd1ea05beb7303529f15820648366111-640-0.jpg",
+      "product_status": true
+    },
+    {
+      "product_id": 4,
+      "product_name": "Alimento Excellent Gato Sterilized Pollo",
+      "product_price": 8350,
+      "product_stock": 0,
+      "product_description": "El Alimento Excellent Gato Sterilized Pollo está especialmente diseñado para satisfacer las necesidades nutricionales específicas de los gatos castrados. Además, ofrece una combinación de ingredientes adecuada para que tu gato tenga una condición corporal ideal, ayudando en el control de bolas de pelo y manteniendo un tracto urinario saludable.",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/184564-1000-1000/150067.png?v=637750189284800000",
+      "product_status": true
+    },
+    {
+      "product_id": 5,
+      "product_name": "Alimento Nufood Perro Adulto Mediano y Grande",
+      "product_price": 7490,
+      "product_stock": 10,
+      "product_description": "El Alimento Nufood para Perro Adulto Mediano y Grande, propone:un programa de nutrición completa e integral: Nutrition for Life Program™. Una fórmula innovadora que reúne diferentes y múltiples ingredientes especialmente seleccionados para perro de tamaño mediano y grande, que garantizan la más alta calidad y que aportan todos los nutrientes vitales y antioxidantes para el máximo bienestar de tu mascota.",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/175262-1000-1000/mrpcdzzybyqoz0pnebjr.jpg?v=637480433944430000",
+      "product_status": true
+    },
+    {
+      "product_id": 6,
+      "product_name": "Alimento Pro Plan Active Mind Perro Mediano y Grande",
+      "product_price": 3900,
+      "product_stock": 0,
+      "product_description": "Purina Pro Plan provee nutrición de avanzada para proteger a los perros mayores de 7 años, manteniéndolos sanos y activos. A su vez, refuerza el sistema inmunológico, mantiene saludables las articulaciones y refuerza la atención mental. Formulado con fuentes naturales de glucosamina, que ayudan a mantener las articulaciones sanas y una movilidad óptima. Contiene una proporción equilibrada de proteína y grasa para mantener la masa muscular magra, una combinación de antioxidantes naturales y vitaminas E y C.",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/179848-1000-1000/7613287032911_1.png?v=637570861499770000",
+      "product_status": true
+    },
+    {
+      "product_id": 7,
+      "product_name": "Alimento Royal Canin Maxi Adulto",
+      "product_price": 12768,
+      "product_stock": 12,
+      "product_description": "Royal Canin Maxi Adult es un alimento para perros de raza grande (26 a 44 Kg ) desde los 15 meses hasta los 5 años. Mejora la calidad de las heces (textura, volumen) gracias a los ácidos grasos EPA-DHA con propiedades antiinflamatorias. Royal Canin es líder en el mercado mundial de alimento balanceado para gatos y perros. Fundada en 1967 en Francia por un médico veterinario, Royal Canin asumió el compromiso de la Nutrición Salud, con el objetivo de aportar las respuestas nutricionales más innovadoras y adaptadas a las necesidades específicas de gatos y perros.",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/170541-1000-1000/156132.png?v=637166910345900000",
+      "product_status": true
+    },
+    {
+      "product_id": 8,
+      "product_name": "Alimento Pro Plan Reduced Calorie para Perro Adulto",
+      "product_price": 13845,
+      "product_stock": 11,
+      "product_description": "El Alimento Pro Plan Reduced Calorie está fabricado con una fórmula de vanguardia que ayuda a lograr un peso corporal ideal, facilita la pérdida de peso en forma sana y protege a largo plazo la salud general de tu mascota. Un peso corporal saludable y una condición corporal magra son de suma importancia para mejorar la salud y aumentar la longevidad de tu perro. Además, contiene fuente natural de tres tipos de fibras que sacian el apetito manteniendo a los perros satisfechos.",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/179873-1000-1000/7613287033130_1.png?v=637570861574070000",
+      "product_status": true
+    },
+    {
+      "product_id": 9,
+      "product_name": "Pouch Royal Canin Sensory Taste",
+      "product_price": 318,
+      "product_stock": 14,
+      "product_description": "El Pouch Royal Canin Sensory Taste está diseñado para estimular el sentido del gusto de tu gato a la hora de alimentarse. La estimulación sensorial ofrece una experiencia más rica para tu mascota, aumentando su bienestar y satisfacción.",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/185926-1000-1000/169017.png?v=637834883327200000",
+      "product_status": true
+    },
+    {
+      "product_id": 10,
+      "product_name": "Alimento Infinity para Gato Adulto",
+      "product_price": 4185,
+      "product_stock": 18,
+      "product_description": "El Pouch Royal Canin Sensory Taste está diseñado para estimular el sentido del gusto de tu gato a la hora de alimentarse",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/160199-1000-1000/Infinity-Gatos-3kg.jpg?v=636373626851800000",
+      "product_status": true
+    },
+    {
+      "product_id": 11,
+      "product_name": "Absorbente Sanitario para Roedores Marlo",
+      "product_price": 570,
+      "product_stock": 3,
+      "product_description": "Absorbente Sanitario para Roedores Marlo 1,2Kg - 1.2 Kg",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/158405-1000-1000/266067.png?v=635998841868600000",
+      "product_status": true
+    },
+    {
+      "product_id": 12,
+      "product_name": "Sieger Cachorro Mordida Mediana/Grande",
+      "product_price": 10500,
+      "product_stock": 18,
+      "product_description": "Alimento balanceado completo, cocido por extrusión, resultado de una mezcla equilibrada de macronutrientes y micronutrientes de altísima calidad que cubren los requerimientos alimenticios de los perros cachorros, desde el destete hasta los 12/15 meses de edad.",
+      "product_image": "https://d3ugyf2ht6aenh.cloudfront.net/stores/979/500/products/sieger-cachorro-np1-c841c72b9bbf5afe6416584236284807-640-0.png",
+      "product_status": true
+    },
+    {
+      "product_id": 13,
+      "product_name": "MARINA DELUXE AQ.KIT 19L",
+      "product_price": 32090,
+      "product_stock": 14,
+      "product_description": "Ideal para el acuarista principiante, los kits de acuario LED Marina 19 L vienen equipados con todo lo necesario para que la primera aventura del aficionado a los peces novato en el maravilloso mundo de la cría de peces sea una experiencia fácil y agradable.",
+      "product_image": "https://catycanar.vtexassets.com/arquivos/ids/158669-1200-auto?v=637732982422330000&width=1200&height=auto&aspect=true",
+      "product_status": true
+    },
+    {
+      "product_id": 14,
+      "product_name": "MIX PARA PERIQUITOS NELSONI RANCH X 750 GR",
+      "product_price": 802,
+      "product_stock": 7,
+      "product_description": "El Mix para Periquitos de Nelsoni Ranch Especialmente formulado para pequeños psitácidos como periquitos australianos, variedades de agapornis, entre otros.Ingredientes: mijo rojo, mijo verde, mijo amarillo, alpiste, girasol rayado chico, avena pelada, cártamo, con vitaminas.",
+      "product_image": "https://catycanar.vtexassets.com/arquivos/ids/160611-1600-auto?v=637762992716570000&width=1600&height=auto&aspect=true",
+      "product_status": true
+    },
+    {
+      "product_id": 15,
+      "product_name": "TROPMIX LOROS X 750 GRS -ZOOTEC-",
+      "product_price": 1220,
+      "product_stock": 14,
+      "product_description": "El alimento de enriquecimiento para pájaros Tropimix es una mezcla 100% comestible que está libre de cáscaras, lo que elimina los desechos sucios. Los alimentos de enriquecimiento como Tropimix se deben dar a los pájaros para cubrir las necesidades psicológicas de tu mascota.",
+      "product_image": "https://catycanar.vtexassets.com/arquivos/ids/156456-1200-auto?v=637732970392430000&width=1200&height=auto&aspect=true",
+      "product_status": true
+    },
+    {
+      "product_id": 16,
+      "product_name": "ALIMENTO MIX PARA COBAYOS NELSONI RANCH",
+      "product_price": 389,
+      "product_stock": 1,
+      "product_description": "ALIMENTO MIX PARA COBAYOS NELSONI RANCH X 750 GR",
+      "product_image": "https://catycanar.vtexassets.com/arquivos/ids/155561-1200-auto?v=637732964464030000&width=1200&height=auto&aspect=true",
+      "product_status": true
+    },
+    {
+      "product_id": 17,
+      "product_name": "CUBOS DE HENO - BOLSA DE 500 GRS",
+      "product_price": 488,
+      "product_stock": 4,
+      "product_description": "CUBOS DE HENO - BOLSA DE 500 GRS",
+      "product_image": "https://catycanar.vtexassets.com/arquivos/ids/159089-1200-auto?v=637732986191500000&width=1200&height=auto&aspect=true",
+      "product_status": true
+    },
+    {
+      "product_id": 18,
+      "product_name": "BAÑO ARENA ROEDORES X 300 GRS -ZOOTEC-",
+      "product_price": 2135,
+      "product_stock": 10,
+      "product_description": "BAÑO ARENA ROEDORES X 300 GRS -ZOOTEC-",
+      "product_image": "https://catycanar.vtexassets.com/arquivos/ids/156437-1200-auto?v=637732970315130000&width=1200&height=auto&aspect=true",
+      "product_status": true
+    },
+    {
+      "product_id": 19,
+      "product_name": "Pelota Nerf Dog Led Bash - Mediana",
+      "product_price": 5142,
+      "product_stock": 18,
+      "product_description": "Pelota Nerf Dog Led Bash - Mediana",
+      "product_image": "https://puppis.vteximg.com.br/arquivos/ids/166092-1000-1000/222113.png?v=636880949036270000",
+      "product_status": true
+    },
+    {
+      "product_id": 20,
+      "product_name": "COMEDERO P/HAMSTER FEEDING BOWL",
+      "product_price": 2064,
+      "product_stock": 3,
+      "product_description": "COMEDERO P/HAMSTER FEEDING BOWL",
+      "product_image": "https://catycanar.vtexassets.com/arquivos/ids/163599-1200-auto?v=637786413847830000&width=1200&height=auto&aspect=true",
+      "product_status": true
+    }
+  ],
+  "users": [
+    {
+      "usuario": "admin",
+      "email": "admin@mail.com",
+      "contrasenia": "Patagonia1+",
+      "provincia": "Tucuman",
+      "codigoPostal": "4000",
+      "localidad": "San Miguel de Tucuman",
+      "calle": "falsa 123",
+      "id": 1,
+      "suspendido": false,
+      "rol": "admin"
+    },
+    {
+      "usuario": "Pepe Argento",
+      "email": "pepeargento@mail.com",
+      "contrasenia": "Patagonia1+",
+      "provincia": "Tucuman",
+      "codigoPostal": "4000",
+      "localidad": "San Miguel de Tucuman",
+      "calle": "falsa 123",
+      "id": 2,
+      "suspendido": false,
+      "rol": "client"
+    },
+    {
+      "usuario": "Juan Perez",
+      "email": "juanperez@mail.com",
+      "contrasenia": "Patagonia1+",
+      "provincia": "Tucuman",
+      "codigoPostal": "4000",
+      "localidad": "San Miguel de Tucuman",
+      "calle": "falsa 123",
+      "id": 3,
+      "suspendido": true,
+      "rol": "admin"
+    }
+  ]
+}
