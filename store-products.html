@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mercado Liebre</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/91918e86f9.js" crossorigin="anonymous"></script>
+  <!-- sweetalert2 -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- custom css -->
+  <link rel="stylesheet" href="store-products.css">
+  <link rel="shortcut icon" href=".//img/PHOTO-2022-10-20-16-53-56.jpg" type="image/png" sizes="64">
+
+  <script src="https://kit.fontawesome.com/35223ba9d9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+  <!-- navbar -->
+  <!-- <nav class="navbar">
+    <div class="navbar-center">
+      <img src="./images/logo-union-store.svg" alt="store logo">
+      <button class="btnPanelControl btn btn-primary d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelControl"
+        aria-controls="panelControl">Panel de control</button>
+      <h1 class="logo-name">union store</h1>
+    </div>
+  </nav> -->
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img
+          src=".//img/PHOTO-2022-10-20-16-53-56.jpg"
+          alt="logo" class="logo img-thumbnail" width="80px" height="75px">
+      </a>
+      <a class="navbar-brand" href="./Index.html">Mercado Liebre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./store-products.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./AboutUs.html">Nuestros Profesionales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Contacto.html">Contacto</a>
+          </li>
+        </ul>
+
+        <div>
+          <button class="btnPanelControl btn btn-primary d-none me-1" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#panelControl" aria-controls="panelControl">Administrador</button>
+        </div>
+
+        <form class="d-flex my-3" role="search">
+          <input id="proSearch" class="form-control me-2" type="search" placeholder="Buscar producto"
+            aria-label="Buscar">
+          <button id="btnSearchProducts" class="btn btn-outline-light" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i></button>
+          <button id="btnSearchClear" class="btn btn-outline-danger ms-2" type="submit"> X </button>
+        </form>
+        <div id="mostrarLogueo" class="m-auto d-flex">
+
+        </div>
+        <div class="cart-btn d-none">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+
+      <!-- <i class="fa-thin fa-paw-simple"></i> -->
+    </div>
+  </nav>
+
+
+  <!-- <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <form class="d-flex">
+        <input id="proSearch" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button id="btnSearchProducts" class="btn btn-outline-success" type="submit">Buscar</button>
+        <button id="btnSearchClear" class="btn btn-outline-danger ms-2" type="submit"> X </button>
+      </form>
+      <div>
+        <button class="btnPanelControl btn btn-primary d-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#panelControl" aria-controls="panelControl">Panel de control</button>
+
+        <div class="cart-btn d-none">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+  <!-- end of navbar -->
+  <!-- products -->
+  <div class="container">
+    <div class="row">
+      <section class="products">
+        <div class="section-title">
+          <h2>PRODUCTOS</h2>
+        </div>
+        <div class="products-center">
+        </div>
+      </section>
+    </div>
+    <!-- end of products -->
+    <!-- users -->
+    <div class="row">
+      <section class="users d-none">
+        <div class="section-title">
+          <h2>Grilla de Usuarios</h2>
+        </div>
+        <div class="users-center">
+        </div>
+      </section>
+    </div>
+    <!-- end of users -->
+    <!-- product info -->
+    <div class="row w-75 m-auto">
+      <section class="productInfo d-none">
+        <div class="section-title mt-5">
+          <h2>Informacion del Producto</h2>
+        </div>
+        <button id="btnBack" class="btn btn-outline-danger mb-2" type="submit"> Volver </button>
+        <div class="productInfo-center">
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- end of product info -->
+  <!-- cart -->
+  <div class="cart-overlay">
+    <div class="cart">
+      <span class="close-cart">
+        <i class="fas fa-window-close"></i>
+      </span>
+      <h2>Tu carro de compras</h2>
+      <div class="cart-content">
+        <!-- cart item -->
+        <!-- <div class="cart-item">
+        </div> -->
+        <!-- end of cart item -->
+      </div>
+      <div class="cart-footer">
+        <h3>Total : $ <span class="cart-total">0</span></h3>
+        <button class="clear-cart">Vaciar carro</button>
+      </div>
+    </div>
+  </div>
+  <!-- end of cart -->
+
+  <!--INICIO PANEL ADMIN -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="panelControl" aria-labelledby="panelControlLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="panelControlLabel">Panel de Control</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="btn-group-vertical">
+        <div class="btn-group my-2" role="group" aria-label="Basic mixed styles example">
+          <button type="button" class="btnShowProducts btn btn-primary">Productos</button>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalNewProduct">+ Alta
+            de
+            Producto</button>
+        </div>
+        <div class="btn-group my-2" role="group" aria-label="Basic mixed styles example">
+          <button type="button" class="btnShowUsers btn btn-primary">Usuarios</button>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalNewUser">+ Alta de
+            Usuario</button>
+        </div>
+      </div>
+      <!-- MODAL INICIO ALTA PRODUCTO-->
+      <div class="modal fade" id="ModalNewProduct" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Alta de Producto</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12 position-relative">
+                  <label for="nombrePro" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombrePro" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="precioPro" class="form-label">Precio</label>
+                  <input type="number" class="form-control" id="precioPro" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="imagenPro" class="form-label">Imagen url</label>
+                  <input type="text" class="form-control" id="imagenPro" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="stockPro" class="form-label">Stock</label>
+                  <input type="number" class="form-control" id="stockPro" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="descriPro" class="form-label">Descripción</label>
+                  <input type="text" class="form-control" id="descriPro" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success btnNewProduct">Guardar</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <!-- <button type="button" class="btn btn-success btnNewProduct">Guardar cambios</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL FIN-->
+      <!-- MODAL INICIO ALTA USUARIO-->
+      <div class="modal fade" id="ModalNewUser" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ModalLabel">Alta de Usuario</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12 position-relative">
+                  <label for="usuarioUser" class="form-label">Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="usuarioUser" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="emailUser" class="form-label">E-mail</label>
+                  <input type="text" class="form-control" id="emailUser" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="contraseniaUser" class="form-label">Contraseña</label>
+                  <input type="text" class="form-control" id="contraseniaUser" required>
+                  <div class="valid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="provinciaUser" class="form-label">Provincia</label>
+                  <input type="text" class="form-control" id="provinciaUser" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="codigopostalUser" class="form-label">Codigo postal</label>
+                  <input type="text" class="form-control" id="codigopostalUser" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="localidadUser" class="form-label">Localidad</label>
+                  <input type="text" class="form-control" id="localidadUser" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="calleUser" class="form-label">Calle</label>
+                  <input type="text" class="form-control" id="calleUser" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-12 position-relative">
+                  <label for="rolUser" class="form-label">Rol</label>
+                  <input type="text" class="form-control" id="rolUser" required>
+                  <div class="invalid-tooltip">
+                    Looks good!
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-success btnNewUser">Guardar</button>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <!-- <button type="button" class="btn btn-success btnNewProduct">Guardar cambios</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MODAL FIN-->
+    </div>
+  </div>
+  <!--FIN PANEL ADMIN -->
+
+  <!-- MODAL INICIO EDITAR PRODUCTO-->
+  <div class="modal fade" id="ModalEditProduct" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Editar Producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-12 position-relative">
+              <label for="idProE" class="form-label">#</label>
+              <input type="text" class="form-control" id="idProE" disabled>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="nombrePro" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombreProE" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="precioPro" class="form-label">Precio</label>
+              <input type="number" class="form-control" id="precioProE" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="imagenPro" class="form-label">Imagen url</label>
+              <input type="text" class="form-control" id="imagenProE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="stockPro" class="form-label">Stock</label>
+              <input type="number" class="form-control" id="stockProE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="descriPro" class="form-label">Descripción</label>
+              <input type="text" class="form-control" id="descriProE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <button type="button" class="btn btn-success btnEditProduct">Guardar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <!-- <button type="button" class="btn btn-success btnNewProduct">Guardar cambios</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL FIN-->
+
+  <!-- MODAL INICIO EDITAR USUARIO-->
+  <div class="modal fade" id="ModalEditUser" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLabel">Editar Usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-12 position-relative">
+              <label for="idProE" class="form-label">#</label>
+              <input type="text" class="form-control" id="idUserE" disabled>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="usuarioUserE" class="form-label">Nombre de Usuario</label>
+              <input type="text" class="form-control" id="usuarioUserE" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="emailUserE" class="form-label">E-Mail</label>
+              <input type="email" class="form-control" id="emailUserE" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="contraseniaUserE" class="form-label">Contraseña</label>
+              <input type="text" class="form-control" id="contraseniaUserE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="provinciaUserE" class="form-label">Provincia</label>
+              <input type="text" class="form-control" id="provinciaUserE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="codigopostalUserE" class="form-label">Codigo Postal</label>
+              <input type="text" class="form-control" id="codigopostalUserE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="localidadUserE" class="form-label">Localidad</label>
+              <input type="text" class="form-control" id="localidadUserE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="calleUserE" class="form-label">Domicilio</label>
+              <input type="text" class="form-control" id="calleUserE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-12 position-relative">
+              <label for="rolUserE" class="form-label">Rol</label>
+              <input type="text" class="form-control" id="rolUserE" required>
+              <div class="invalid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <button type="button" class="btn btn-success btnEditUser">Guardar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <!-- <button type="button" class="btn btn-success btnNewProduct">Guardar cambios</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL FIN-->
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white ">
+  <!-- Grid container -->
+  <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-linkedin-in"></i></a>
+
+          <!-- Github -->
+          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links -->
+      <section class="">
+          <!--Grid row-->
+          <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">web</h5>
+
+                  <ul class="list-unstyled mb-0">
+                      <li>
+                          <a href="login.html" class="text-white">Ingresar</a>
+                      </li>
+                      <li>
+                          <a href="registrarme.html" class="text-white">Registrarme</a>
+                      </li>
+                      <li>
+                          <a href="AboutUs.html" class="text-white">Acerca de nosotros</a>
+                      </li>
+                      <li>
+                          <a href="Contacto.html" class="text-white">Página de contacto</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Conócenos</h5>
+
+                  <ul class="list-unstyled mb-0">
+                      <li>
+                          <a href="./Pagina404.html" class="text-white">Área de clientes</a>
+                      </li>
+                      <li>
+                          <a href="./Pagina404.html" class="text-white">Condiciones de ventas</a>
+                      </li>
+                      <li>
+                          <a href="./Pagina404.html" class="text-white">Responsabilidad social</a>
+                      </li>
+                      <li>
+                          <a href="./Pagina404.html" class="text-white">Código ético</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase">Ayuda</h5>
+
+                  <ul class="list-unstyled mb-0">
+                      <li>
+                          <a href="store-products.html" class="text-white">Comprar</a>
+                      </li>
+                      <li>
+                          <a href="./Pagina404.html" class="text-white">Resolución de problemas</a>
+                      </li>
+                      <li>
+                          <a href="./Pagina404.html" class="text-white">Centro de seguridad</a>
+                      </li>
+                      <li>
+                          <a href="./Pagina404.html" class="text-white">Defensa del consumidor</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <ul class="list-unstyled mb-0">
+                      <h6>Medios de pago</h6>
+                      <li>
+                          <img src="https://enclave.rae.es/sites/default/files/visa_mastercard.png" alt="tarjetas"
+                              width="96">
+                      </li>
+                      <li>
+                          <img src="https://pintureriaszumik.com.ar/wp-content/uploads/2020/01/tarjeta-naranja-633x400.png"
+                              alt="tarjeta" width="46">
+                          <img src="https://www.hsbc.com.ar/content/dam/hsbc/hbar/images/tarjeta-debito/tarjeta-debito-masiva-540x340.png"
+                              alt="tarjeta" width="45">
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+          </div>
+          <!--Grid row-->
+      </section>
+
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright: todos los derechos reservados
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+  <!-- app js -->
+  <script src="./index.js"></script>
+  <script src="/store-products.js"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        nav.classList.add('bgNavbar');
+      } else {
+        nav.classList.remove('bgNavbar');
+      }
+    })
+
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+  </script>
+</body>
+
+</html>
