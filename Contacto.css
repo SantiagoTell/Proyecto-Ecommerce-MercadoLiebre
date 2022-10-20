@@ -20,3 +20,8 @@ font-weight: 450;
 opacity: 90%;
 }
 
+@media (max-width: 426px) {
+    .contacto {
+        width: 100vw;
+    }
+}
