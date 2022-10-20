@@ -60,12 +60,12 @@ const cerrarSeccion = () => {
   if (isUser) {
     localStorage.removeItem(`user`);
     setTimeout(() => {
-      location.reload();
+      window.location.href = './index.html';
     }, 1000);
   } else {
     localStorage.removeItem(`isAdmin`);
     setTimeout(() => {
-      location.reload();
+      window.location.href = './index.html';
     }, 1000);
   }
 }

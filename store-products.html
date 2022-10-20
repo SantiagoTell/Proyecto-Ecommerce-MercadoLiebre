@@ -14,6 +14,15 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- custom css -->
   <link rel="stylesheet" href="store-products.css">
+
+  <script src="https://kit.fontawesome.com/35223ba9d9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -26,7 +35,65 @@
       <h1 class="logo-name">union store</h1>
     </div>
   </nav> -->
-  <nav class="navbar navbar-light bg-light">
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img
+          src="https://img2.freepng.es/20191121/flj/transparent-rabbit-rabbits-and-hares-hare-black-and-white-anim-rabbit-icon-png-picture-703464-rabbit-icon-png5dd7497ecdd9e2.8202808815743901428432.jpg"
+          alt="logo" class="logo img-thumbnail" width="80px" height="75px">
+      </a>
+      <a class="navbar-brand" href="./Index.html">Mercado Liebre</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./Index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./store-products.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Pagina404.html">Nuestros Profesionales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Pagina404.html">¿Quienes somos?</a>
+          </li>
+        </ul>
+
+        <div>
+          <button class="btnPanelControl btn btn-primary d-none me-1" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#panelControl" aria-controls="panelControl">Administrador</button>
+        </div>
+
+        <form class="d-flex my-3" role="search">
+          <input id="proSearch" class="form-control me-2" type="search" placeholder="Buscar producto"
+            aria-label="Buscar">
+          <button id="btnSearchProducts" class="btn btn-outline-light" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i></button>
+          <button id="btnSearchClear" class="btn btn-outline-danger ms-2" type="submit"> X </button>
+        </form>
+        <div id="mostrarLogueo" class="m-auto d-flex">
+
+        </div>
+        <div class="cart-btn d-none">
+          <span class="nav-icon">
+            <i class="fas fa-cart-plus"></i>
+          </span>
+          <div class="cart-items">0</div>
+        </div>
+      </div>
+
+      <!-- <i class="fa-thin fa-paw-simple"></i> -->
+    </div>
+  </nav>
+
+
+  <!-- <nav class="navbar navbar-light bg-light">
     <div class="container">
       <form class="d-flex">
         <input id="proSearch" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -34,8 +101,8 @@
         <button id="btnSearchClear" class="btn btn-outline-danger ms-2" type="submit"> X </button>
       </form>
       <div>
-        <button class="btnPanelControl btn btn-primary d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#panelControl"
-        aria-controls="panelControl">Panel de control</button>
+        <button class="btnPanelControl btn btn-primary d-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#panelControl" aria-controls="panelControl">Panel de control</button>
 
         <div class="cart-btn d-none">
           <span class="nav-icon">
@@ -45,7 +112,7 @@
         </div>
       </div>
     </div>
-  </nav>
+  </nav> -->
   <!-- end of navbar -->
   <!-- products -->
   <div class="container">
@@ -71,7 +138,7 @@
     </div>
     <!-- end of users -->
     <!-- product info -->
-    <div class="row w-50 m-auto">
+    <div class="row w-75 m-auto">
       <section class="productInfo d-none">
         <div class="section-title mt-5">
           <h2>Informacion del Producto</h2>
@@ -405,6 +472,7 @@
   <!-- MODAL FIN-->
 
   <!-- app js -->
+  <script src="./index.js"></script>
   <script src="/store-products.js"></script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -415,26 +483,36 @@
     crossorigin="anonymous"></script>
 
   <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict'
 
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.querySelectorAll('.needs-validation')
+    var nav = document.querySelector('nav');
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 10) {
+        nav.classList.add('bgNavbar');
+      } else {
+        nav.classList.remove('bgNavbar');
+      }
+    })
 
-      // Loop over them and prevent submission
-      Array.prototype.slice.call(forms)
-        .forEach(function (form) {
-          form.addEventListener('submit', function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault()
-              event.stopPropagation()
-            }
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
 
-            form.classList.add('was-validated')
-          }, false)
-        })
-    })()
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
   </script>
 </body>
 
