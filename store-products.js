@@ -75,7 +75,7 @@ let cart = [];
 // buttons
 let buttonsDOM = [];
 
-let loginAdmin = JSON.parse(localStorage.getItem('login'));
+let loginAdmin = JSON.parse(localStorage.getItem('isAdmin'));
 
 // getting the products
 class Products {
