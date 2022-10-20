@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
 
 :root {
-  --primaryColor: #F78E69;
+  /* --primaryColor: #F78E69; */
+  --primaryColor: #f769b7ce;
   --mainWhite: #fff;
   --mainBlack: #5D675B;
   --mainGrey: #ececec;
@@ -19,7 +20,7 @@ body {
   font-family: "Nunito", sans-serif;
 }
 /* --------------- Navbar ---------------- */
-.navbar {
+/* .navbar {
   position: sticky;
   top: 0;
   height: 60px;
@@ -44,7 +45,7 @@ body {
 }
 .nav-icon {
   font-size: 1.5rem;
-}
+} */
 .cart-btn {
   position: relative;
   cursor: pointer;
@@ -62,9 +63,14 @@ body {
 /* --------------- End of Navbar ---------------- */
 
 /* --------------- Products ---------------- */
-.products {
-  padding: 4rem 0;
+.products{
+  padding: 10rem 0;
 }
+
+.productInfo{
+  padding: 10rem 0;
+}
+
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -151,7 +157,8 @@ article {
   width: 100%;
   height: 100%;
   transition: var(--mainTransition);
-  background: rgb(240, 157, 81, 0.5);
+  /* background: rgb(240, 157, 81, 0.5); */
+  background: rgba(240, 136, 202, 0.374);
   z-index: 2;
   visibility: hidden;
 }
@@ -163,13 +170,14 @@ article {
   height: 100%;
   overflow: scroll;
   z-index: 3;
-  background: rgb(231, 226, 221);
+  background: rgba(243, 136, 229, 0.761);
   padding: 1.5rem;
   transition: var(--mainTransition);
   transform: translateX(100%);
 }
 .showCart {
   transform: translateX(0);
+  padding-top: 115px;
 }
 .transparentBcg {
   visibility: visible;
@@ -178,6 +186,7 @@ article {
   .cart {
     width: 30vw;
     min-width: 450px;
+    padding-top: 100px;
   }
 }
 
@@ -254,6 +263,12 @@ article {
 .clear-cart:hover {
   background: transparent;
   color: var(--primaryColor);
+}
+
+.btnInfo {
+
+  background: rgba(243, 136, 229, 0.761);
+
 }
 
 /* --------------- End of Cart ---------------- */
